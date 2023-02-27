@@ -1,0 +1,27 @@
+/*
+to write a c program to print the following output. 
+A
+A B C
+A B C D
+A B C D E
+A B C D E F 
+A B C D E F G
+…..
+…..
+A B C D E F G H I J K L M N O P Q R S T U V W X
+A B C D E F G H I J K L M N O P Q R S T U V W X Y
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+*/
+#include<stdio.h>
+main()
+{
+	int a,b,c;
+	for(a=65;a<=90;a++)
+	{
+		for(b=65;b<=a;b++)
+		{
+		printf("%c ",b);
+         }
+    printf("\n");
+    }
+}
