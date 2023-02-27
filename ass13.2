@@ -1,0 +1,23 @@
+/* c program to print sum of digits of a given number until sum is a single digit.
+Use nested while loop. For eg. Input : 456, output : 6 (not 15, because again u need to sum of 1+5 also)
+
+*/
+#include<stdio.h>
+main()
+{
+	int n,a,b,c,sum=0,rem;
+	scanf("%d",&n);
+	a=1;
+    while(n/10!=0)
+    {
+    	sum=0;
+	while(n!=0)
+	{
+		rem=n%10;
+		sum=sum+rem;
+		n=n/10;
+	}
+	n=sum;
+    }
+    printf("%d",sum);
+}
